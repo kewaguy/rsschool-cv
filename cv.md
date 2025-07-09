@@ -2,13 +2,13 @@
 
 ![Profile Picture](img/profile-img.jpg)
 
-> Aspiring developer, learning and growing every day.
+> Junior Frontend Developer
 
 ## Contacts
 
-- **Email:** kewaguy@gmail.com
+- **Email:** [kewaguy@gmail.com](mailto:kewaguy@gmail.com)
 - **GitHub:** [kewaguy](https://github.com/kewaguy)
-- **Telegram:** @kewaguy
+- **Telegram:** [kewaguy](https://t.me/kewaguy)
 - **Discord(rs-school):** Genadi Stepanov (@kewaguy)
 
 ## About Me
@@ -25,6 +25,10 @@ I've always been drawn to programming, but I used to quit halfway because it fel
 - Git
 
 ## Code Example
+
+Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
+
+Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
 
 ```
 function countBits(n) {
