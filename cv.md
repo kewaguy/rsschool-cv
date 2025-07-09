@@ -1,6 +1,6 @@
 # Genadi Stepanov
 
-![Profile Picture](https://avatars.githubusercontent.com/u/181162668?s=200&v=4)
+![Profile Picture](img/profile-img.jpg)
 
 > Aspiring developer, learning and growing every day.
 
