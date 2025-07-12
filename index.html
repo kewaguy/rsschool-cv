@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- prettier-ignore -->
     <meta charset="UTF-8">
+    <!-- prettier-ignore -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- prettier-ignore -->
     <link rel="stylesheet" href="style.css">
     <title>Genadi Stepanov CV</title>
   </head>
   <body>
-    <h1>Genadi Stepnov</h1>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li>About Me</li>
+            <li>Contacts</li>
+            <li>Skills</li>
+            <li>Code Example</li>
+            <li>Education</li>
+            <li>Work Experience</li>
+            <li>Languages</li>
+          </ul>
+        </nav>
+      </header>
+      <aside>
+        <div class="profile-img">
+          <!-- prettier-ignore -->
+          <img
+            src="img/profile-img.jpg"
+            alt="Genadi Stepanov"
+            class="profile-image"
+            width="200"
+            height="200"
+          >
+        </div>
+        <h1>Genadi Stepanov</h1>
+        <p class="title">Web Developer</p>
+        <p>
+          Favorite Quote: "The only way to do great work is to love what you
+          do."
+        </p>
+        <div class="social-icons">
+          <a href="#">
+            <!-- prettier-ignore -->
+            <img src="img/github.png" width="32" height="32" alt="GitHub">
+          </a>
+          <a href="#">
+            <!-- prettier-ignore -->
+            <img src="img/telegram.png" width="32" height="32" alt="Telegram">
+          </a>
+          <a href="#">
+            <!-- prettier-ignore -->
+            <img src="img/email.png" width="32" height="32" alt="Email">
+          </a>
+        </div>
+      </aside>
+      <main>
+        <section id="about-me">
+          <h2>About Me</h2>
+          <p>
+            I'm a student at RS School, learning web development. I've always
+            been drawn to programming, but I used to quit halfway because it
+            felt too hard, and I wasn’t sure I could do it. This year, I made a
+            decision to change that. No more doubts, no more giving up. I'm
+            committed now — whatever it takes, I'm going to push through and
+            finish what I started.
+          </p>
+        </section>
+        <section id="contacts">
+          <h2>Contacts</h2>
+          <ul>
+            <li>Email: kewaguy@gmail.com</li>
+            <li>GitHub: kewaguy</li>
+            <li>Telegram: kewaguy</li>
+          </ul>
+        </section>
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section id="code-example">
+          <h2>Code Example</h2>
+          <pre><code>
+function countBits(n) {
+  // Program Me
+  const mass = n
+    .toString(2)
+    .split('')
+    .filter((bit) => bit === "1").length;
+  return mass;
+}
+
+const { assert } = require("chai")
+
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(countBits(0), 0);
+    assert.strictEqual(countBits(4), 1);
+    assert.strictEqual(countBits(7), 3);
+    assert.strictEqual(countBits(9), 2);
+    assert.strictEqual(countBits(10), 2);
+  })
+})</code></pre>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>Mermisi - Web Technologies (HTML, CSS, JS)</li>
+            <li>IT Step - Programming (C++, C#)</li>
+            <li>
+              UDEMY
+              <ul>
+                <li>Build Responsive Real-World Websites with HTML and CSS</li>
+                <li>
+                  The Complete JavaScript Course 2025: From Zero to Expert!
+                </li>
+                <li>
+                  Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                </li>
+                <li>React - The Complete Guide 2025 (incl. Next.js, Redux)</li>
+                <li>Node.js, Express, MongoDB & More: The Complete Bootcamp</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section id="work-experience">
+          <h2>Work Experience</h2>
+          <p>Project CV by RSSchool</p>
+        </section>
+        <section id="languages">
+          <h2>Languages</h2>
+          <ul>
+            <li>Russian</li>
+            <li>English</li>
+            <li>Georgian</li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        © 2025 <a href="https://github.com/kewaguy">kewaguy</a>
+        <a href="https://rs.school/courses/javascript-ru">
+          <!-- prettier-ignore -->
+          <img src="img/rs-school-logo.svg" alt="RSSchool Logo">
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
