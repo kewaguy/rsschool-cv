@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "open-sans-font";
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+}
+
+body {
+  font-family: open-sans-font, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
