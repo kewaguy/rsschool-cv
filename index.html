@@ -1,12 +1,280 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- prettier-ignore -->
     <meta charset="UTF-8">
+    <!-- prettier-ignore -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- prettier-ignore -->
     <link rel="stylesheet" href="style.css">
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Genadi Stepanov CV</title>
   </head>
   <body>
-    <h1>Genadi Stepnov</h1>
+    <header>
+      <div class="pre-container">
+        <div class="logo">
+          <span class="logo-text"><a href="#">kewaguy</a></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code-example">Code Example</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="flex-container">
+        <aside>
+          <div class="profile-header">
+            <div class="profile-img">
+              <!-- prettier-ignore -->
+              <img
+            src="img/profile-img.jpg"
+            alt="Genadi Stepanov"
+            class="profile-image"
+          >
+            </div>
+            <div class="name"><h1>Genadi Stepanov</h1></div>
+            <div class="job">Web Developer</div>
+            <h3>Languages</h3>
+            <div class="languages">
+              <div class="language">
+                <div class="lang-info">
+                  <span class="lang-name">Russian</span>
+                  <span class="lang-lvl">Native</span>
+                </div>
+                <div class="caps">
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                </div>
+              </div>
+              <div class="language">
+                <div class="lang-info">
+                  <span class="lang-name">English</span>
+                  <span class="lang-lvl">A2</span>
+                </div>
+                <div class="caps">
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                  <div class="cap"></div>
+                  <div class="cap"></div>
+                  <div class="cap"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+              <div class="language">
+                <div class="lang-info">
+                  <span class="lang-name">Georgian</span>
+                  <span class="lang-lvl">B1</span>
+                </div>
+                <div class="caps">
+                  <div class="cap cap-fill"></div>
+                  <div class="cap cap-fill"></div>
+                  <div class="cap"></div>
+                  <div class="cap"></div>
+                  <div class="cap"></div>
+                  <div class="cap"></div>
+                </div>
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="https://github.com/kewaguy" class="fa fa-github"></a>
+              <a href="mailto:kewaguy@gmail.com" class="fa fa-google"></a>
+              <a href="https://t.me/kewaguy" class="fa fa-telegram"></a>
+              <a
+                href="https://www.instagram.com/kewaguy"
+                class="fa fa-instagram"
+              ></a>
+              <a href="https://x.com/kewaguy" class="fa fa-twitter"></a>
+            </div>
+          </div>
+          <div class="profile-footer">
+            <a href="#" class="download-btn">Download Resume</a>
+          </div>
+        </aside>
+        <main>
+          <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+              I'm a student at RS School, learning web development. I've always
+              been drawn to programming, but I used to quit halfway because it
+              felt too hard, and I wasn’t sure I could do it. This year, I made
+              a decision to change that. No more doubts, no more giving up. I'm
+              committed now — whatever it takes, I'm going to push through and
+              finish what I started.
+            </p>
+          </section>
+          <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-wrapper">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-bar">
+                  <span class="html"></span>
+                </div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>Css</span>
+                </div>
+                <div class="progress-bar">
+                  <span class="css"></span>
+                </div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>Javascript</span>
+                </div>
+                <div class="progress-bar">
+                  <span class="javascript"></span>
+                </div>
+              </div>
+
+              <div class="bar">
+                <div class="info">
+                  <span>GIT</span>
+                </div>
+                <div class="progress-bar">
+                  <span class="git"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="code-example">
+            <h2>Code Example</h2>
+            <p>
+              Write a function that takes an integer as input, and returns the
+              number of bits that are equal to one in the binary representation
+              of that number. You can guarantee that input is non-negative.
+            </p>
+            <p>
+              <b>Example</b>: The binary representation of 1234 is 10011010010,
+              so the function should return 5 in this case
+            </p>
+
+            <pre><code>function countBits(n) {
+  // Program Me
+  const mass = n
+    .toString(2)
+    .split('')
+    .filter((bit) => bit === "1").length;
+  return mass;
+}
+
+const { assert } = require("chai")
+
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(countBits(0), 0);
+    assert.strictEqual(countBits(4), 1);
+    assert.strictEqual(countBits(7), 3);
+    assert.strictEqual(countBits(9), 2);
+    assert.strictEqual(countBits(10), 2);
+  })
+})</code></pre>
+          </section>
+          <section id="education">
+            <h2>Education</h2>
+            <div class="edu-list">
+              <div class="edu-item">
+                <h3 class="edu-title">Web Technologies (HTML, CSS, JS)</h3>
+                <div class="edu-place">MERMISI</div>
+                <div class="edu-year">2014 - 2015</div>
+              </div>
+              <div class="edu-item">
+                <h3 class="edu-title">Programming (C++, C#)</h3>
+                <div class="edu-place">IT STEP</div>
+                <div class="edu-year">2019 - 2021</div>
+              </div>
+            </div>
+            <div class="udemy-courses">
+              <h3>Udemy Courses</h3>
+
+              <div class="course-row">
+                <a
+                  href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+                  >Build Responsive Real-World Websites with HTML and CSS
+                </a>
+                <span class="course-percentage">47%</span>
+              </div>
+
+              <div class="course-row">
+                <a
+                  href="https://www.udemy.com/course/the-complete-javascript-course/"
+                  >JavaScript</a
+                >
+                <span class="course-percentage">53%</span>
+              </div>
+
+              <div class="course-row">
+                <a href="https://www.udemy.com/course/advanced-css-and-sass/"
+                  >CSS & Sass</a
+                >
+                <span class="course-percentage">0%</span>
+              </div>
+
+              <div class="course-row">
+                <a
+                  href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                  >React</a
+                >
+                <span class="course-percentage">0%</span>
+              </div>
+
+              <div class="course-row">
+                <a
+                  href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
+                  >Node.js, Express, MangoDB</a
+                >
+                <span class="course-percentage">0%</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+              <a
+                href="https://github.com/kewaguy/rsschool-cv"
+                class="project-item"
+                >RSSCHOOL CV</a
+              >
+              <a href="#" class="project-item">PROJECT #1</a>
+              <a href="#" class="project-item">PROJECT #2</a>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="pre-container">
+        <div class="footer-left">© 2025 by kewaguy</div>
+        <div class="footer-center">
+          <a href="https://github.com/kewaguy">GitHub</a>
+        </div>
+        <div class="footer-right">
+          <a href="https://rs.school/courses/javascript-ru">
+            <!-- prettier-ignore -->
+            <img src="img/rs-school-logo.svg" alt="RSSchool Logo" class="rs-school-logo">
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
