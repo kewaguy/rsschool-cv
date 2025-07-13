@@ -120,7 +120,7 @@ aside {
   align-items: center;
   gap: 20px;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 16px 0 25px 0;
 }
 
 .social-icons a:hover {
@@ -227,11 +227,11 @@ aside {
 }
 
 .profile-footer {
+  padding: 10px 0;
   border-radius: 0 0 12px 12px;
   background-color: #fefefe;
   height: 100px;
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
